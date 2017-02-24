@@ -1,0 +1,25 @@
+#game {
+    position: relative;
+}
+body {
+    margin: 0;
+}
+#container {
+    margin: 0;
+    position: relative;
+    display: block;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#gameoverlay {
+    margin: 0;
+    background: transparent;
+    color: white;
+    position: absolute;
+    display: ;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+}
