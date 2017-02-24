@@ -13,7 +13,7 @@
 				}
 			};
 			var keyboardControls = (function() {
-				var keys = { SP : 32, W : 87, A : 65, S : 83, D : 68, UP : 38, LT : 37, DN : 40, RT : 39 };
+				var keys = { SP : 32, W : 87, A : 65, S : 83, D : 68, UP : 38, LT : 37,	DN : 40, RT : 39 };
 				var keysPressed = {};
 				(function( watchedKeyCodes ) {
 					var handler = function( down ) {
@@ -26,9 +26,8 @@
 					};
 					window.addEventListener( "keydown", handler( true ), false );
 					window.addEventListener( "keyup", handler( false ), false );
-				})([
-					keys.SP, keys.W, keys.A, keys.S, keys.D, keys.UP, keys.LT, keys.DN, keys.RT
-				]);
+				})
+				([keys.SP, keys.W, keys.A, keys.S, keys.D, keys.UP, keys.LT, keys.DN, keys.RT]);
 				var forward = new THREE.Vector3();
 				var sideways = new THREE.Vector3();
 				return function() {
